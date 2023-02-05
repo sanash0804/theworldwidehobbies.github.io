@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Video</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        body {
+            height: fit-content;
+            background: linear-gradient(magenta,red,yellow,green,blue,orange,wheat);
+        }
+
+        @media only screen and (min-width: 835px) {
+            video {
+                pos top: 10%;
+                width: fit-content;
+
+            }
+        }
+    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Pacifico&family=Sriracha&family=Tangerine:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav" style="z-index: 10;">
+        <label class="burger" for="check">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+        <input type="checkbox" id="check">
+        <ul class="menu"><a href="https://www.youtube.com/@theworld-widehobbies1925">
+                <img src="img.png" alt="Network Error" class="logo" height="100">
+            </a>
+            <li class="navitems"><a href="Index.html">Home</a>
+            </li>
+            <li class="navitems"><a href="https://www.youtube.com/@theworld-widehobbies1925">Youtube</a></li>
+            <li class="navitems"><a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScrKBkHXBKJHSKwikJdNM-ogxvqEGdxMR2kAiRl1ryGV4CeBA/viewform?embedded=true">Contact
+                    Us</a></li>
+            <li class="navitems"><a href="Video.htm">Watch Video</a></li>
+        </ul>
+    </nav>
+    <video controls autoplay style="position: absolute; top: 30%; height: fit-content;width: 100%;">
+        <source src="About Us.mp4">
+        Error
+    </video>
+</body>
+
+</html>
