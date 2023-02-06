@@ -4,6 +4,9 @@ html,body{
     overflow-x:hidden;
     background: linear-gradient(magenta,red,yellow,green,blue,orange,wheat);
 }
+html iframe{
+    height: fit-content;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -124,20 +127,8 @@ html,body{
 .box::-webkit-scrollbar-thumb:hover{
     background-color: rgb(170, 181, 192);
 }
-#contact::-webkit-scrollbar{
-    background-color: black;
-    width: 20px;
-    border-radius: 100px;
-    max-height: 600px;
-    position: relative;
-    border: 1px solid black;
-}
-#contact::-webkit-scrollbar-thumb{
-    background-color: aliceblue;
-    border-radius: 30px;
-}
-#contact::-webkit-scrollbar-thumb:hover{
-    background-color: rgb(170, 181, 192);
+#contact{
+    height: 1000px;
 }
 @media only screen and (max-width: 835px){
     .menu{
@@ -205,6 +196,6 @@ html,body{
     }
     iframe{
         width: 100%;
-        height: fit-content;
+        height: 20px;
     }
 }
