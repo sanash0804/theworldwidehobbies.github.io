@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        .Entry{
+            border-radius: 20px;
+            height:30px;
+            font-size: 14px;
+            text-align: center;
+            border: 0.25px solid rgb(114, 114, 153);
+            background-color: rgb(235, 213, 255);
+            width: 200px;
+            margin-top: 50px;
+            color:white;
+            font-weight: bold;
+        }
+        .contact{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 450px;
+            background-color: transparent;
+        }
+        .Button{
+            width: 120px;
+            margin-top: 30px;
+            height: 30px;
+            background-color: aliceblue;
+            border-radius: 10px;
+            font-weight: bold;
+            transition-duration: 0.3s;
+            border-color: aliceblue;
+            border-color: linear-gradient(magenta,red,yellow,green,blue,orange,wheat);
+        }
+        .Button:hover{
+            background-color: rgb(134, 141, 146);
+            border-color: rgb(134, 141, 146);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" name="Contact" class="contact">
+        <img src="img.png" alt="Network Error" height="100">
+        <input type="text" placeholder="Name" name="Name" class="Entry">
+        <input type="Email" placeholder="Email" name="Email" class="Entry">
+        <input type="text" name="problem" placeholder="Elaborate your concern" class="Entry">
+        <input type="submit" value="submit" class="Button">
+    </form>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzdm1CB1HmXW-o1KAOn-3_OXXCw_Bg9T0doXaIAOvY9KOUjXZgM8FvM7zuc3bnHw7I5cA/exec'
+        const form = document.forms['Contact']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
