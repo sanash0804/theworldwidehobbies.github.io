@@ -204,4 +204,7 @@ html,body{
     img{
         height: 270px;
     }
+    #contact{
+    height:500px;
+    }
 }
