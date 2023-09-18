@@ -201,6 +201,7 @@ html,body{
     .b .content{
         flex-direction: column-reverse;
         align-items: center;
+        margin:0px;
     }
     img{
         height: 270px;
