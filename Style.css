@@ -193,7 +193,7 @@ html,body{
     nav{
         max-height: fit-content;
     }
-    .a p{
+    .a .content{
         flex-direction: column;
         align-items: center;
         margin:0px;
