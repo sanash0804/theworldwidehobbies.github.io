@@ -198,7 +198,7 @@ html,body{
         align-items: center;
         margin:0px;
     }
-    .b .content{
+    .b p{
         flex-direction: column-reverse;
         align-items: center;
     }
